@@ -1,6 +1,7 @@
 #!/bin/bash
 # Get an updated config.sub and config.guess
 cp $BUILD_PREFIX/share/gnuconfig/config.* .
+export STRIPPROG="${STRIP}"
 ./configure \
   --with-libedit \
   --prefix=$PREFIX \
