@@ -1,0 +1,39 @@
+From c382d4e337a93f36bc11cd763f59e9767dccb9df Mon Sep 17 00:00:00 2001
+From: Chris Burr <christopher.burr@cern.ch>
+Date: Tue, 20 Dec 2022 17:25:46 +0100
+Subject: [PATCH] Set --strip-program when running install
+
+---
+ configure    | 2 +-
+ configure.ac | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/configure b/configure
+index ba87c9b..012721b 100755
+--- a/configure
++++ b/configure
+@@ -21681,7 +21681,7 @@ fi
+ fi
+ 
+ 
+-STRIP_OPT=-s
++STRIP_OPT="-s --strip-program=$STRIP"
+ # Check whether --enable-strip was given.
+ if test ${enable_strip+y}
+ then :
+diff --git a/configure.ac b/configure.ac
+index de60a1b..2fdc4dc 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -4830,7 +4830,7 @@ AC_ARG_WITH([xauth],
+ 	]
+ )
+ 
+-STRIP_OPT=-s
++STRIP_OPT="-s --strip-program=$STRIP"
+ AC_ARG_ENABLE([strip],
+ 	[  --disable-strip         Disable calling strip(1) on install],
+ 	[
+-- 
+2.39.0
+
