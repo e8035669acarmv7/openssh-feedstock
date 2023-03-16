@@ -1,11 +1,11 @@
-About openssh
-=============
+About openssh-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openssh-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.openssh.com/
 
 Package license: SSH-OpenSSH
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openssh-feedstock/blob/main/LICENSE.txt)
 
 Summary: A suite of secure networking utilities based on the SSH protocol
 
